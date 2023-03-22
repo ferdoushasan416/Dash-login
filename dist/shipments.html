@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shipments</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <!-- html start -->
+    <main>
+        <header class="flex items-center justify-between p-8 border-b border-gray-200 bg-white">
+            <div class="logo">
+                <a href="index.html"><img src="images/Logo.png"></a>
+            </div>
+            <!-- search -->
+                <div class="flex items-center overflow-hidden">
+                    <div class="relative w-[600px]">
+                        <input type="text" class="bg-gray-200 outline-none border-none pl-4 py-3 h-12 block w-full text-sm" placeholder="Search by anything">
+                         <button class="inline-block bg-primary w-12 h-12 absolute top-0 right-0 hover:bg-black transition">
+                         <img src="images/Search.png" class="text-center m-auto"></button>
+                    </div>
+                     <!-- header-info -->
+                    <div class="md:flex gap-4 items-center pl-10 md:pl-20">
+                        <span><img src="images/Notification.png" class="hidden md:block"></span>
+                        <span><img src="images/man.png" alt=""></span>
+                    </div>
+                </div>
+         </header>
+       <!--header end -->
+           <div class="lg:flex">
+              <div class="bg-white min-h-full shadow-md w-full lg:w-72 p-8">
+                 <div>
+                    <h4 class="text-base font-bold uppercase mb-4">Menu</h4>
+                      <ul class="space-y-5">
+                           <li>
+                                <a href="#" class="flex items-center gap-2 text-gray-400 text-base hover:text-primary hover:pl-1 transition-all duration-300"><img src="images/Dashboard.png">Dashboard</a>
+                           </li>
+                            <li>
+                                 <a href="#" class="flex items-center gap-2 text-gray-400 text-base hover:text-primary hover:pl-1 transition-all duration-300 text-primary font-semibold"><img src="images/more-02.png">Shipments</a>
+                            </li>
+                            <li>
+                                 <a href="#" class="flex items-center gap-2 text-gray-400 text-base hover:text-primary hover:pl-1 transition-all duration-300"><img src="images/Credit-card.png">Payments</a>
+                            </li>
+                           <li>
+                              <a href="#" class="flex items-center gap-2 text-gray-400 text-base hover:text-primary hover:pl-1 transition-all duration-300"><img src="images/Location.png">Location</a>
+                          </li>
+                      </ul>
+                 </div>
+                 <div class="mt-8">
+                    <h4 class="text-base font-bold uppercase mb-4">Organisation</h4>
+                      <ul class="space-y-5">
+                           <li>
+                                <a href="#" class="flex items-center gap-2 text-gray-400 text-base hover:text-primary hover:pl-1 transition-all duration-300"><img src="images/3 User.png">Employees</a>
+                           </li>
+                            <li>
+                                 <a href="#" class="flex items-center gap-2 text-gray-400 text-base hover:text-primary hover:pl-1 transition-all duration-300"><img src="images/Truck-Delivery.png">Vehicles</a>
+                            </li>
+                      </ul>
+                 </div>
+                 <!-- bottom -->
+                 <div class="pt-[300px]">
+                    <h4 class="text-base font-bold uppercase mb-4">Organisation</h4>
+                      <ul class="space-y-5">
+                           <li class="bg-gray-200 p-4">
+                                <a href="#" class="flex items-center gap-2 text-gray-400 text-base hover:text-primary hover:pl-1 transition-all duration-300"><img src="images/Setting.png" class="pr-2">Settings</a>
+                           </li>
+                            <li class="bg-gray p-4">
+                                 <a href="#" class="flex items-center gap-2 text-gray-400 text-base hover:text-primary hover:pl-1 transition-all duration-300"><img src="images/Login.png" class="pr-2">Log Out</a>
+                            </li>
+                      </ul>
+                 </div>
+                 <!-- thumb -->
+                 <div class="flex gap-3 items-center mt-6 border-t pt-4">
+                     <img src="images/big-man.png" alt="">
+                    <div>
+                         <h4 class="text-lg font-semibold mb-0">Ratul Ahmed</h4>
+                         <span class="text-lg text-gray-400">Admin</span>
+                    </div>
+                 </div>
+              </div>
+           <!-- Right -->
+            <div class="flex-grow p-8 bg-gray-200">
+                <div class="lg:flex justify-between space-y-4">
+                    <div>
+                         <h3 class="text-xl font-bold text-black">Shipments</h3>
+                         <span class="text-base text-gray-400 font-normal">109 Orders Found</span>
+                    </div>
+                    <div class="lg:flex gap-4 items-center">
+                          <span class="text-base text-gray-400 font-medium">Sort By:-</span>
+                         <div class="flex items-center gap-2 bg-white p-2 shadow-md cursor-pointer">
+                              <span><img src="images/Paper.png"></span>
+                              <span class="text-base font-medium">All Orders</span>
+                              <span class="mt-1 pl-4"><img src="images/Arrow-Down 2.png"></span>
+                         </div>
+                         <div class="flex items-center gap-2 bg-white p-2 shadow-md cursor-pointer">
+                              <span><img src="images/Calendar.png"></span>
+                              <span class="text-base font-medium">June</span>
+                              <span class="mt-1 pl-4"><img src="images/Arrow-Down 2.png"></span>
+                         </div>
+                         <div class="flex items-center gap-2 bg-primary p-2 shadow-md cursor-pointer text-white">
+                              <span class="text-base font-medium">Add New</span>
+                              <span class="mt-1 pl-4"><img src="images/Vector.png"></span>
+                         </div>
+                    </div>
+                  </div>
+                 <!-- tabel -->
+                    <div class="relative overflow-x-auto">
+                        <table class="w-full md:text-base text-sm mt-6 text-left">
+                            <thead class="text-white bg-primary">
+                                <tr>
+                                    <th scope="col" class="px-6 py-4">
+                                        Booking Id
+                                    </th>
+                                    <th scope="col" class="px-6 py-4">
+                                        Name
+                                    </th>
+                                    <th scope="col" class="px-6 py-4">
+                                        Address
+                                    </th>
+                                    <th scope="col" class="px-6 py-4">
+                                        Date
+                                    </th>
+                                    <th scope="col" class="px-6 py-4">
+                                        Hub
+                                    </th>
+                                    <th scope="col" class="px-6 py-4">
+                                        Status
+                                    </th>
+                                    <th>
+                                      
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="bg-white">
+                                        <th class="px-6">
+                                            126802736
+                                        </th>
+                                        <td class="px-6 py-4">
+                                            Ratul Ahmed
+                                        </td>
+                                        <td class="px-6 py-4">
+                                            Bheramara, Kushtia, Khulna
+                                        </td>
+                                        <td class="px-6 py-4">
+                                            12-11-2023
+                                        </td>
+                                        <td class="px-6 py-4">
+                                            Bheramara
+                                        </td>
+                                        <td class="px-6">
+                                            <a href="#"><span><img src="images/check-text.png"></span></a>
+                                        </td>
+                                        <td class="px-6">
+                                            <a href="#" class="text-left"><img src="images/More.png" alt=""></a>
+                                        </td>
+                                    </tr>
+                                 <tr class="bg-white">
+                                    <th class="px-6">
+                                        126802736
+                                    </th>
+                                    <td class="px-6 py-4">
+                                        Ratul Ahmed
+                                    </td>
+                                    <td class="px-6 py-4">
+                                        Bheramara, Kushtia, Khulna
+                                    </td>
+                                    <td class="px-6 py-4">
+                                        12-11-2023
+                                    </td>
+                                    <td class="px-6 py-4">
+                                        Bheramara
+                                    </td>
+                                    <td class="px-6">
+                                        <a href="#"><span><img src="images/check-text.png"></span></a>
+                                    </td>
+                                    <td class="px-6">
+                                        <a href="#" class="text-left"><img src="images/More.png" alt=""></a>
+                                    </td>
+                                </tr>                                 
+                             </tbody>
+                          </table>  
+                     </div>
+                      <!--number count-->
+                     <div class="flex items-center justify-between pt-8">
+                        <div>
+                            <h4>Showing Results 10 of 109</h4>
+                        </div>
+                        <div>
+                           <ul class="flex items-center gap-2 text-center">
+                               <li class="bg-white w-10 h-10 pt-3 inline-block cursor-pointer">
+                                   <span class="font-bold text-primary"><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 text-center m-auto">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5"/>
+                                    </svg>
+                                    </span>
+                                </li>
+                                <li class="bg-white w-10 h-10 pt-2 inline-block text-primary cursor-pointer">10</li>
+                                <li>of 128</li>
+                               <li class="bg-white w-10 h-10 pt-3 inline-block cursor-pointer">
+                                  <span class="font-bold text-primary"><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 text-center m-auto">
+                                     <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                                   </svg>                                  
+                                   </span>
+                                </li>
+                           </ul> 
+                        </div>
+                     </div>
+               </div>
+           </div>
+    </main>
+</body>
+</html>

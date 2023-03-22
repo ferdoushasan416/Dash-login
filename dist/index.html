@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home-login</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <!-- html start -->
+    <main class="bg-[url('../images/bg-1.png')] bg-no-repeat bg-right-top">
+        <header class="flex items-center justify-between p-8 border-b border-gray-200 bg-white">
+            <div class="logo">
+                <a href="index.html"><img src="images/Logo.png"></a>
+            </div>
+            <nav>
+                <ul class="lg:flex items-center">
+                    <li class="inline-block ml-8 relative"><a href="#" class="text-lg font-normal px-2 block text-gray-400 transition-all
+                    hover:text-primary">Contact</a></li>
+                    <li class="inline-block ml-8 relative"><a href="#" class="text-lg font-normal px-2 block text-gray-400 transition-all
+                    hover:text-primary">Help</a></li>
+                    <li class="inline-block ml-8 relative"><a href="#" class="text-lg font-normal px-2 block text-gray-400 transition-all
+                    hover:text-primary">Website</a></li>
+                    <li class="inline-block ml-8 relative"><a href="#" class="text-lg font-semibold px-2 block 
+                    text-primary">Log In</a></li>
+                </ul> 
+            </nav>
+        </header>
+      <!--header end -->
+        <section class="lg:flex items-center gap-10 justify-between relative min-h-[800px] lg:pr-20">
+             <div>
+                <div>
+                    <img src="images/hero.png">
+                </div>
+             </div>
+             <div class="bg-white mt-8 p-14 py-20 shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] lg:w-[472px]">
+                <div class="mb-14">
+                    <h4 class="text-xl mb-2">Welcome Back!</h4>
+                    <p class="text-base">Log in your account & Manage<br/> your system</p>
+                </div>
+                <form action="post">
+                    <div class="relative mb-16">
+                        <input type="email" class="w-full h-10 outline-none border-b border-gray pl-8 text-base bg-transparent" placeholder="Email">
+                        <span class="absolute top-2 left-0"><img src="images/Profile.png"></span>
+                    </div>
+                    <div class="mb-16">
+                        <label for="password" class="text-sm text-black">Password</label>
+                        <div class="relative mt-2">
+                            <input id="password" type="password" class="w-full h-10 outline-none border-b border-gray pl-8 pr-8 text-base bg-transparent">
+                            <span class="absolute top-2 left-0 cursor-pointer"><img src="images/Lock.png"></span>
+                            <span class="absolute top-2 right-0 cursor-pointer"><img src="images/Hide.png"></span>
+                        </div>
+                        <a href="#" class="text-sm inline-block italic mt-4 text-black">Forgot Password?</a>
+                    </div>
+                    <div class="flex items-center justify-between mb-6">
+                        <span class="text-sm">Save Password</span>
+                        <input id="savepassword" class="peer hidden" type="checkbox">
+                        <label for="savepassword" class="relative inline-block cursor-pointer w-12 h-6 bg-gray peer-checked:bg-primary transition-all rounded-[34px]
+                        before:absolute before:w-4 before:h-4 before:left-1 peer-checked:before:left-7 before:bottom-1 before:bg-white before:transition-all
+                        before:rounded-full">
+                        </label>
+                    </div>
+                    <div>
+                        <button class="bg-primary p-4 md:p-6 w-full text-white cursor-pointer text-base uppercase font-semibold
+                        transition-all hover:bg-black">log in</button>
+                    </div>
+                </form>
+             </div>
+        </section>
+    </main>
+</body>
+</html>
